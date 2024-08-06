@@ -10,8 +10,98 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="splitter logo" class="logo" />
+    </header>
+    <main>
+      <form class="form" novalidate>
+        <label for="number">Bill</label>
+        <div class="input__wrapper">
+          <img
+            src="./images/icon-dollar.svg"
+            alt="dollar sign"
+            class="input__icon"
+          />
+          <input
+            type="number"
+            class="input__field bill__input"
+            placeholder="0"
+            id="number"
+          />
+        </div>
+
+        <h2>Select Tip %</h2>
+        <div class="percentage__selectors">
+          <input type="radio" id="percent5" name="percentage" value="5" />
+          <label for="percent5">5%</label>
+
+          <input type="radio" id="percent10" name="percentage" value="10" />
+          <label for="percent10">10%</label>
+
+          <input type="radio" id="percent15" name="percentage" value="15" />
+          <label for="percent15">15%</label>
+
+          <input type="radio" id="percent25" name="percentage" value="25" />
+          <label for="percent25">25%</label>
+
+          <input type="radio" id="percent50" name="percentage" value="50" />
+          <label for="percent50">50%</label>
+
+          <input type="radio" id="custom" name="percentage" value="custom" />
+          <label for="custom" class="custom__label">
+            <input
+              type="number"
+              id="customInput"
+              class="custom__input input__field"
+              placeholder="Custom"
+            />
+          </label>
+        </div>
+
+        <label class="people__label" for="people">Number of People</label>
+        <div class="input__wrapper">
+          <img
+            src="./images/icon-person.svg"
+            alt="person icon"
+            class="input__icon"
+          />
+          <input
+            type="number"
+            class="input__field people__input"
+            placeholder="0"
+            id="people"
+          />
+        </div>
+      </form>
+      <section class="display">
+        <div class="display__content">
+          <div class="tip">
+            <div class="title">
+              <h3>Tip Amount</h3>
+              <span>/ person</span>
+            </div>
+            <span class="tip__result result">$4.27</span>
+          </div>
+          <div class="total">
+            <div class="title">
+              <h3>Total</h3>
+              <span>/ person</span>
+            </div>
+            <span class="total__result result">$32.79</span>
+          </div>
+        </div>
+        <button class="resetBtn">RESET</button>
+      </section>
+    </main>
+  </body>
 </html>
