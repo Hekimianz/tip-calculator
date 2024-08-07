@@ -25,18 +25,19 @@
     </header>
     <main>
       <form class="form" novalidate>
-        <label for="number">Bill</label>
+        <label for="bill">Bill</label>
         <div class="input__wrapper">
           <img
             src="./images/icon-dollar.svg"
             alt="dollar sign"
             class="input__icon"
           />
+          <span class="bill__error hidden">Can't be zero</span>
           <input
             type="number"
             class="input__field bill__input"
             placeholder="0"
-            id="number"
+            id="bill"
           />
         </div>
 
@@ -75,6 +76,7 @@
             alt="person icon"
             class="input__icon"
           />
+          <span class="people__error hidden">Can't be zero</span>
           <input
             type="number"
             class="input__field people__input"
@@ -90,14 +92,14 @@
               <h3>Tip Amount</h3>
               <span>/ person</span>
             </div>
-            <span class="tip__result result">$4.27</span>
+            <span class="tip__result result">$0.00</span>
           </div>
           <div class="total">
             <div class="title">
               <h3>Total</h3>
               <span>/ person</span>
             </div>
-            <span class="total__result result">$32.79</span>
+            <span class="total__result result">$0.00</span>
           </div>
         </div>
         <button class="resetBtn">RESET</button>

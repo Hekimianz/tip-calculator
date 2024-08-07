@@ -59,15 +59,15 @@ main {
   border-radius: 15px;
 }
 
-#number::-webkit-outer-spin-button,
-#number::-webkit-inner-spin-button,
+#bill::-webkit-outer-spin-button,
+#bill::-webkit-inner-spin-button,
 #people::-webkit-outer-spin-button,
 #people::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-#number,
+#bill,
 #people {
   -moz-appearance: textfield;
   caret-color: var(--active);
@@ -234,6 +234,20 @@ h3 {
   height: 4.8rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.people__error,
+.bill__error {
+  color: #e17052;
+  position: absolute;
+  right: 0;
+  top: -24px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 1240px) {
